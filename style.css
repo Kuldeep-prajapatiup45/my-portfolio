@@ -1,3 +1,6 @@
+/* ==========================================================================
+   🌐 1. GLOBAL RESET & TECH VARIABLES (रूट सेटिंग्स और फोंट्स)
+   ========================================================================== */
 * {
     margin: 0;
     padding: 0;
@@ -35,7 +38,9 @@ main {
     width: 100%;
 }
 
-/* 🧭 NAV BAR STYLING */
+/* ==========================================================================
+   🧭 2. NAVIGATION BAR (डेस्कटॉप के लिए ग्लासमोर्फिज़्म नव बार)
+   ========================================================================== */
 nav {
     display: flex;
     gap: 15px;
@@ -89,13 +94,16 @@ nav a:hover::after {
     background: var(--neon-cyan);
 }
 
-/* 🟢 SECTIONS RE-ENGINEERED (NO MORE STICKY BUG!) */
+/* ==========================================================================
+   🌌 3. SECTION 1: HERO HOME (कंप्यूटर के लिए ओरिजिनल लेआउट)
+   ========================================================================== */
 .section1 {
     height: 100vh;
     display: flex;
     justify-content: center;
     background-color: var(--backColor);
     background-image: url('background.png');
+    /* कंप्यूटर के लिए चौड़ी फोटो */
     background-size: cover;
     background-position: center;
     background-repeat: no-repeat;
@@ -105,19 +113,6 @@ nav a:hover::after {
     padding-left: 70px;
 }
 
-.section-global {
-    min-height: 100vh;
-    width: 100%;
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-    padding: 100px 40px;
-    background: radial-gradient(circle at top, #0f172a, #020617 80%);
-    border-bottom: 1px solid rgba(255, 255, 255, 0.02);
-}
-
-/* 🌆 HERO CONTENT */
 .content-About {
     color: var(--text-color);
     margin-top: 20px;
@@ -238,7 +233,39 @@ nav a:hover::after {
     text-shadow: 0 0 10px var(--neon-cyan);
 }
 
-/* 🎯 SECTION 2: ROADMAP TARGETS */
+/* ==========================================================================
+   🏢 4. GLOBAL SECTIONS STRUCTURE (सिम्पल स्क्रॉल बेस)
+   ========================================================================== */
+.section-global {
+    min-height: 100vh;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 100px 40px;
+    background: radial-gradient(circle at top, #0f172a, #020617 80%);
+    border-bottom: 1px solid rgba(255, 255, 255, 0.02);
+}
+
+.section-heading-div {
+    width: 100%;
+    text-align: center;
+    margin-bottom: 40px;
+}
+
+.section-heading-div h1 {
+    color: #fff;
+    font-family: var(--tech-font);
+    font-size: 34px;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+    text-shadow: 0 0 15px rgba(0, 170, 255, 0.4);
+}
+
+/* ==========================================================================
+   🎯 5. SECTION 2: LEARNING ROADMAP (TARGET CARDS)
+   ========================================================================== */
 .title {
     color: var(--text-color);
     font-family: var(--tech-font);
@@ -310,7 +337,9 @@ nav a:hover::after {
     color: #94a3b8;
 }
 
-/* 📊 SECTION 3: CURRENT FOCUS STATUS */
+/* ==========================================================================
+   📊 6. SECTION 3: CURRENT FOCUS STATUS & OPERATION
+   ========================================================================== */
 .status-container {
     width: 100%;
     max-width: 850px;
@@ -331,16 +360,16 @@ nav a:hover::after {
     margin-bottom: 10px;
 }
 
-.highlight-text {
-    color: var(--neon-cyan);
-    text-shadow: 0 0 8px var(--neon-cyan);
-}
-
 .status-widget p {
     color: rgba(255, 255, 255, 0.6);
     font-size: 15px;
     margin-bottom: 25px;
     font-family: var(--para-font);
+}
+
+.highlight-text {
+    color: var(--neon-cyan);
+    text-shadow: 0 0 8px var(--neon-cyan);
 }
 
 .progress-wrapper {
@@ -413,22 +442,9 @@ nav a:hover::after {
     font-family: var(--tech-font);
 }
 
-/* 🛠️ SECTION 4: SKILLS ARSENAL */
-.section-heading-div {
-    width: 100%;
-    text-align: center;
-    margin-bottom: 40px;
-}
-
-.section-heading-div h1 {
-    color: #fff;
-    font-family: var(--tech-font);
-    font-size: 34px;
-    text-transform: uppercase;
-    letter-spacing: 2px;
-    text-shadow: 0 0 15px rgba(0, 170, 255, 0.4);
-}
-
+/* ==========================================================================
+   🛠️ 7. SECTION 4: MY TECH ARSENAL & SKILLS
+   ========================================================================== */
 .skills-wrapper {
     display: flex;
     width: 100%;
@@ -501,7 +517,9 @@ nav a:hover::after {
     margin: 0;
 }
 
-/* 💻 SECTION 5: PROJECTS (3-COLUMN COMPACT MEDIUM CARDS GRID) */
+/* ==========================================================================
+   💻 8. SECTION 5: CUSTOM PROJECTS (3-COLUMN COMPACT MEDIUM GRID)
+   ========================================================================== */
 .projects-grid {
     display: grid;
     grid-template-columns: repeat(3, 1fr);
@@ -613,7 +631,9 @@ nav a:hover::after {
     border-color: #fff;
 }
 
-/* 📝 SECTION 6: TIL LOG BOX (3-COLUMN INTERNAL SCROLL GRID) */
+/* ==========================================================================
+   📝 9. SECTION 6: TIL LOG BOX (3-COLUMN BOX WITH INTERNAL SCROLL)
+   ========================================================================== */
 .log-wrapper-scroll {
     width: 100%;
     max-width: 1100px;
@@ -681,7 +701,9 @@ nav a:hover::after {
     font-family: var(--para-font);
 }
 
-/* ✉ SECTION 7: CONTACT ME */
+/* ==========================================================================
+   ✉ 10. SECTION 7: CONTACT FORM & TEXTAREA
+   ========================================================================== */
 .contact-container {
     background-color: rgba(17, 34, 64, 0.3);
     border: 1px solid rgba(255, 255, 255, 0.05);
@@ -784,4 +806,170 @@ textarea {
     transform: translateY(-3px);
     box-shadow: 0 6px 25px rgba(0, 170, 255, 0.6);
     letter-spacing: 1px;
+}
+
+/* ==========================================================================
+   📱 11. MOBILE & TABLET RESPONSIVE MATRIX (मीडिया क्वेरी)
+   ========================================================================== */
+@media screen and (max-width: 768px) {
+
+    /* 🔴 [जादू] मोबाइल के लिए बिल्कुल अलग वर्टिकल इमेज यहाँ लोड होगी */
+    .section1 {
+        height: auto;
+        min-height: 100vh;
+        padding: 130px 20px 40px 20px;
+        /* एक्स्ट्रा टॉप पैडिंग */
+        text-align: center;
+        justify-content: center;
+
+        /* 🖼️ यहाँ तुम्हारी मोबाइल वाली खास फोटो लोड होगी */
+        background-image: url('background-mobile.png') !important;
+        background-size: cover;
+        background-position: center center;
+        /* मोबाइल फोटो एकदम बीच में अलाइन रहेगी */
+        background-repeat: no-repeat;
+        position: relative;
+    }
+
+    /* मोबाइल बैकग्राउंड को डार्क शेड देने के लिए */
+    .section1::before {
+        content: '';
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100%;
+        background: rgba(2, 6, 23, 0.55);
+        z-index: 0;
+    }
+
+    .content-About,
+    .dot-intor,
+    .button,
+    .socil-media {
+        position: relative;
+        z-index: 1;
+    }
+
+    /* 🧭 MOBILE NAV BAR MANAGER (एकदम प्रीमियम हैकर स्टाइल स्लाइडर) */
+    nav {
+        width: 92%;
+        height: 48px;
+        top: 15px;
+        padding: 0 15px;
+        gap: 12px;
+        overflow-x: auto;
+        /* बटन्स बढ़ने पर स्वाइप हो सकेगा */
+        justify-content: flex-start;
+        white-space: nowrap;
+        border-radius: 8px;
+        border: 1px solid rgba(69, 234, 240, 0.3);
+        background: rgba(11, 22, 44, 0.85);
+        /* थोड़ा डार्क और सॉलिड ग्लास */
+    }
+
+    /* मोबाइल स्क्रॉल बार को छुपाने का कोड ताकि नव बार साफ़ दिखे */
+    nav::-webkit-scrollbar {
+        display: none;
+    }
+
+    nav {
+        -ms-overflow-style: none;
+        scrollbar-width: none;
+    }
+
+    nav a {
+        font-size: 13px;
+        padding: 4px 6px;
+    }
+
+    /* बाकी सारे सेक्शन्स का मोबाइल रिस्पॉन्सिव बेस */
+    .section-global {
+        height: auto;
+        min-height: 100vh;
+        padding: 90px 20px 40px 20px;
+    }
+
+    .dot-intor {
+        position: relative;
+        justify-content: center;
+        margin-bottom: 15px;
+    }
+
+    .content-About {
+        margin-left: 0;
+    }
+
+    .content-About h1 {
+        font-size: 34px;
+    }
+
+    .kuldeep-span {
+        font-size: 44px;
+    }
+
+    .content-About h3 {
+        font-size: 19px;
+    }
+
+    .button {
+        flex-direction: column;
+        margin-left: 0;
+        gap: 12px;
+        width: 100%;
+    }
+
+    .button a {
+        justify-content: center;
+        font-size: 16px;
+    }
+
+    .socil-media {
+        margin-left: 0;
+        justify-content: center;
+        margin-top: 35px;
+    }
+
+    /* ग्रिड्स का 1-कॉलम मोबाइल अलाइनमेंट */
+    .card-cantain,
+    .log-grid,
+    .projects-grid {
+        grid-template-columns: 1fr;
+        padding: 5px;
+        gap: 20px;
+    }
+
+    .status-widget {
+        padding: 20px 15px;
+    }
+
+    .live-metrics {
+        flex-direction: column;
+        gap: 12px;
+    }
+
+    .skills-wrapper {
+        flex-direction: column;
+        gap: 20px;
+    }
+
+    .skill-box {
+        width: 100%;
+        height: auto;
+        padding: 20px 15px;
+        margin: 0;
+    }
+
+    .languages-grid {
+        grid-template-columns: 1fr;
+    }
+
+    .log-wrapper-scroll {
+        max-height: 420px;
+        padding: 10px;
+    }
+
+    .contact-container {
+        padding: 25px 15px;
+    }
 }
